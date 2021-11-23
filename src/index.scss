@@ -1,0 +1,16 @@
+@import './scss/reset.scss';
+@import './scss/fonts.scss';
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+input[type=text] {
+    padding-left: 5px;
+}
+body {
+    position: relative;
+}
+._container {
+    margin: 0 auto;
+    width: 96%;
+}

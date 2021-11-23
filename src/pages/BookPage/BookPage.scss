@@ -1,0 +1,85 @@
+
+.book-info {
+    &__items {
+        position: relative;
+        max-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        background: #F3F2F1;
+        padding: 20px;
+        height: 500px;
+        width: 50%;
+    }
+    &__elem-img {
+        height: 100%;
+        max-width: 100%;
+    }
+
+    &__text {
+        width: 50%;
+        padding: 40px;
+    }
+
+    &__elem {
+        &-cat {
+            color:#9DA9B9;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        &-name {
+            font-size: 24px;
+            padding-top: 25px;
+            font-weight: 700;
+        }
+        &-author {
+            font-size: 20px;
+            padding-top: 15px;
+            color:#9DA9B9;
+            text-decoration: underline;
+        }
+
+        &-border {
+            overflow-y: scroll;
+            margin-top: 25px;
+            border: 1px solid #9DA9B9;
+            max-height: 300px;
+        }
+        &-desc {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .book-info {
+        &__img {
+            justify-self: flex-start;
+            height: 300px;
+            padding: 5px;
+        }
+        &__items {
+            min-height: 600px;
+        }
+        &__elem-border {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+        &__text {
+            padding: 15px;
+        }
+        &__elem-cat, &__elem-author {
+            font-size: 15px;
+        }
+        &__elem-name {
+            font-size: 20px;
+        }
+    }
+}
