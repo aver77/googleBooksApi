@@ -30,7 +30,6 @@ const Header = ({searchReq, booksParametersOnSet}) => {
         if (e.key === "Enter") {
             e.preventDefault();
             searchReq = refHandler();
-            console.log(searchReq, cat, sort);
             booksParametersOnSet(searchReq, cat, sort);
         }
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import './BooksPage.scss';
 
 //компонент одной
-const SingleBook = ({id, pic, cat, name, author}) => {
+const SingleBook = ({pic, cat, name, author}) => {
     return (
         <>
             <div className="book__pic-elem">
